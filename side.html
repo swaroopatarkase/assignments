@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Side Bar</title>
+    <style>
+        .body{
+            background-color: azure;
+            margin: 0;
+            padding: 0;
+        }
+        .menu{
+            background-color: white;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        .parent{
+            display: flex;min-height: 100vh;
+        }
+        .side-bar{
+            background-color: grey;
+            width: 200px;
+        }
+        .contanier{
+            background-color: aqua;
+            width: 100%;
+        }
+        .menu-item{
+            background-color: white;
+            margin: 10px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            padding: 5px 20px;
+            cursor: progress;
+        }
+        .menu-icon{
+            height: 40px;
+            width: 50px;
+        }
+        .menu-text{
+            margin-left: 5px;
+            font-size: 30px;
+        }
+        @media screen and (min-width: 600px) and (max-width: 768px) {
+        }     
+        @media screen and (min-width: 769px) and (max-width: 992px) {
+        }
+        @media screen and (min-width: 993px) and (max-width: 1200px) {
+        } 
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="side-bar">
+            <div class="menu">
+                <img src="./img/home-icon-silhouette.png" class="menu-icon"/>
+                <span class="menu-text">Home</span>
+            </div>
+        </div>
+        <div class="contanier">content</div>
+    </div>
+</body>
+</html>
