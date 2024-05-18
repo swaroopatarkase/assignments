@@ -6,14 +6,14 @@
         .body{
             background-color: #eeeee4;
         }
+        .text-center{
+            text-align: center;
+        }
         .logo{
             height: 120px;
             width: 100px;
             display: block;
             margin: 0 auto;
-        }
-        .heading{
-            text-align: center;
         }
         .contanier{
             border: 2px solid black;
@@ -30,12 +30,50 @@
         .number{
             text-align: right;
         }
+        .title{
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        .key{
+            color: gray;
+            width:30%;
+
+        }
+        .pair{
+            font-weight: bold;
+            border-bottom: 1px dashed grey;
+            width: 30%;
+        }
+        .code-body{
+            position: relative;
+        }
+        .detail{
+            display: flex;
+            justify-content: space-around;
+            font-size: 20px;
+        }
+        .sign{
+            text-align: right;
+            margin-top: 100px;
+        }
+        .stamp{
+            width: 80px;
+            position: absolute;
+            right: 30px;
+            bottom: 20px;
+
+        }
+        .footer{
+            padding: 10px;
+            font-size: 20px;
+            background-color: aquamarine;
+        }
     </style>
 </head>
 <body>
     <div class="contanier">
       <img src="img/commerce.png" class="logo"/>
-      <h2 class="heading">Road To Code</h2>
+      <h2 class="text-center">Road To Code</h2>
       <p class="address">
         404,Above Lotus Hospital,<br/>
         Shewalewadi,<br>
@@ -46,10 +84,53 @@
       </p>
       <hr>
       <div class="code-body">
-
+        <h3 class="title text-center">Payment Receipt</h3>
+        <div class="detail">
+            
+            <div class="key">
+                Receipt No.:
+            </div>
+            <div class="pair">
+                0123
+            </div>
+        </div>
+        <div class="detail">
+            
+            <div class="key">
+                Amount:
+            </div>
+            <div class="pair">
+                40000/-
+            </div>
+        </div>
+        <div class="detail">
+            
+            <div class="key">
+                Payment Mode:
+            </div>
+            <div class="pair">
+                UPI
+            </div>
+        </div>
+        <div class="detail">
+            
+            <div class="key">
+                Payment Date:
+            </div>
+            <div class="pair">
+                20 May 2024
+            </div>
+        </div>
+        <img src="img/stamp.png" class="stamp"/>
+        <p class="sign">
+            Accountent Signature
+            <br><br><br>
+        </p>
       </div>
-      <div class="footer">
+      <hr>
 
+      <div class="footer text-center">
+        <p>Thank You For Your Payment!!!</p>
       </div>
     </div>
 </body>
