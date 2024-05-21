@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;min-height: 100vh;
+        }
+         .side-bar{
+            background-color: rgb(176, 176, 247);
+            width: 300px;
+        }
+        .menu{
+            background-color: white;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        .menu-icon{
+            height: 40px;
+            width: 50px;
+        }
+        .menu-text{
+            margin-left: 5px;
+            font-size: 30px;
+        }
+        .content{
+            background-color: rgb(176, 176, 247);
+            width: 100%;
+        }
+        .main{
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+
+        }
+        .title{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="side-bar">
+        <div class="menu">
+            <img src="./img/home-icon-silhouette.png" class="menu-icon"/>
+            <span class="menu-text">Home</span>
+        </div>
+        <div class="menu">
+            <img src="./img/calendar.png" class="menu-icon"/>
+            <span class="menu-text">Calendar</span>
+        </div>
+        <div class="menu">
+            <img src="./img/maps-and-flags.png" class="menu-icon"/>
+            <span class="menu-text">Destination</span>
+        </div>
+        <div class="menu">
+            <img src="./img/chat.png" class="menu-icon"/>
+            <span class="menu-text">Chats</span>
+        </div>
+        <div class="menu">
+            <img src="./img/cloudy-day.png" class="menu-icon"/>
+            <span class="menu-text">Weather</span>
+        </div>
+        <div class="menu">
+            <img src="./img/setting.png" class="menu-icon"/>
+            <span class="menu-text">Setting</span>
+        </div>
+        <div class="menu">
+            <img src="./img/train.png" class="menu-icon"/>
+            <span class="menu-text">Travelling</span>
+        </div>
+    </div>
+    <div class="content">
+    <h1 class="title">Calender</h1>
+    <div class="main">
+    <label for="name">Enter the Year:</label>
+        <input type="number" id="number" required="true"/>
+        <br><br>
+    <label for="name">Enter the Month:</label>
+        <input type="number" id="number" required="true"/>
+    </div>
+    </div>
+</body>
+</html>
