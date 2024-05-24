@@ -18,7 +18,7 @@
             display: flex;min-height: 100vh;
         }
         .side-bar{
-            background-color: rgb(176, 176, 247);
+            background-color: rgb(163, 163, 237);
             width: 300px;
         }
         .contanier{
@@ -37,9 +37,10 @@
         .menu{
             background-color: white;
             padding: 5px;
-            margin: 5px;
+            margin: 10px;
             border-radius: 10px;
-            height: 50px;
+            height: 80px;
+            padding: 5px;
         }
         .menu-icon{
             height: 40px;
@@ -65,7 +66,6 @@
             justify-content: space-around;
         }
         .box{
-            height: 1000px;
             width: 300px;
             border: 1px solid black;
             border-radius: 10px;
@@ -91,19 +91,64 @@
             height: 30px;
             font-size: 20px;
         }
-        @media screen and (min-width: 600px) and (max-width: 768px) {
+        .btn:hover{
+            text-align: center;
+            border: 2px solid gray;
+            border-radius: 11px;
+            height: 31px;
+            box-shadow: gray;
+        }
+        .side-bar ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+        }
+
+        .side-bar ul li {
+            float: left;
+        }
+        .side-bar ul li a {
+            height: 50px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+        }
+        .side-bar ul li a:hover {
+            background-color: rgb(118, 118, 247);
+            border-radius: 7px;
+        }
+        @media screen and (max-width: 768px) {
             .menu-icon{
-                height: 15px;
+                display: none;
+            }
+            .box{
+                height: 500px;
+            }
+            .block{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
         }     
-        @media screen and (min-width: 769px) and (max-width: 992px) {
+        @media screen and (min-width: 769px) and (max-width: 1300px) {
             .menu-icon{
-                height: 20px;
+                display: none;
+            }
+            .box{
+                height: 500px;
+            }
+            .block{
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
             }
         }
-        @media screen and (min-width: 993px) and (max-width: 1200px) {
-            .menu-icon{
-                height: 40px;
+        @media screen and (min-width: 1300px) {
+            .box{
+                height: 500px;
             }
         } 
     </style>
@@ -111,34 +156,35 @@
 <body>
     <div class="parent">
         <div class="side-bar">
-            <a class="menu" href="./side.html">
+            <ul>
+            <li><a class="menu" href="./side.html">
                 <img src="./img/home-icon-silhouette.png" class="menu-icon"/>
                 <span class="menu-text">Home</span>
-            </a><br>
-            <a class="menu" href="./calender.html">
+            </a></li><br>
+            <li><a class="menu" href="./calender.html">
                 <img src="./img/calendar.png" class="menu-icon"/>
                 <span class="menu-text">Calendar</span>
-            </a><br>
-            <a class="menu" href="./destination.html">
+            </a></li><br>
+            <li><a class="menu" href="./destination.html">
                 <img src="./img/maps-and-flags.png" class="menu-icon"/>
                 <span class="menu-text">Destination</span>
-            </a><br>
-            <a class="menu" href="./chat.html" >
+            </a></li><br>
+            <li><a class="menu" href="./chat.html" >
                 <img src="./img/chat.png" class="menu-icon"/>
                 <span class="menu-text">Chats</span>
-            </a><br>
-            <a class="menu" href="./weather.html">
+            </a></li><br>
+            <li><a class="menu" href="./weather.html">
                 <img src="./img/cloudy-day.png" class="menu-icon"/>
                 <span class="menu-text">Weather</span>
-            </a><br>
-            <a class="menu" href="./setting.html">
+            </a></li><br>
+            <li><a class="menu" href="./setting.html">
                 <img src="./img/setting.png" class="menu-icon"/>
                 <span class="menu-text">Setting</span>
-            </a><br>
-            <a class="menu" href="./travelling.html">
+            </a></li><br>
+            <li><a class="menu" href="./travelling.html">
                 <img src="./img/train.png" class="menu-icon"/>
                 <span class="menu-text">Travelling</span>
-            </a>
+            </a></li>
         </div>
         <div class="contanier">
             <div clas="main">
